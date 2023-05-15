@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkhurh163kiyh"]
+
+[ext_resource type="Texture2D" uid="uid://dui2sty7nfqqb" path="res://modules/te-chain-chomp/texture/chain_chomp_chain.png" id="1_gdmmc"]
+[ext_resource type="Script" path="res://modules/te-chain-chomp/chain_chomp_chain.gd" id="1_ihaul"]
+
+[node name="ChainChompChain" type="Sprite2D"]
+texture = ExtResource("1_gdmmc")
+script = ExtResource("1_ihaul")
