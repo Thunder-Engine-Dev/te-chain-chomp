@@ -86,7 +86,7 @@ func _walk() -> void:
 	if speed.x != 0: dir = signi(speed.x)
 	
 	var posx: float = global_transform.affine_inverse().basis_xform(global_position).x
-	if !_rest && ((dir < 0 && posx < pile_pos_x - walking_range) || (dir > 0 && posx > pile_pos_x + walking_range)):
+	if is_on_wall() || (!_rest && ((dir < 0 && posx < pile_pos_x - walking_range) || (dir > 0 && posx > pile_pos_x + walking_range))):
 		var speed_x: float = speed.x
 		
 		vel_set_x(0)
