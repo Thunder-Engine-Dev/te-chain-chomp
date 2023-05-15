@@ -6,3 +6,9 @@
 [node name="ChainChompChain" type="Sprite2D"]
 texture = ExtResource("1_gdmmc")
 script = ExtResource("1_ihaul")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenEnabler2D" parent="."]
+modulate = Color(1, 1, 1, 0.0196078)
+position = Vector2(4.17233e-07, 4.17233e-07)
+scale = Vector2(0.8, 0.8)
+metadata/_edit_lock_ = true
